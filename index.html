@@ -18,6 +18,18 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1307712794563872&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- GHL form submission listener -->
+<script>
+window.addEventListener('message', function(e) {
+  if (e.data && typeof e.data === 'object') {
+    var t = String(e.data.type || e.data.event || '').toLowerCase();
+    if (t.includes('form') && (t.includes('submit') || t.includes('submitted'))) {
+      fbq('trackCustom', 'Submit application');
+    }
+  }
+});
+</script>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Resurrect Media — Meta ads & automation built exclusively for junk removal companies. Qualified leads in 30 days or you don't pay.">
