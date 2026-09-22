@@ -29,21 +29,18 @@ window.addEventListener('message', function(e) {
   }
 });
 </script>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resurrect Media — Meta ads & automation built exclusively for junk removal companies. Qualified leads in 30 days or you don't pay.">
-  <title>Resurrect Media — Junk Removal Ads That Book Real Jobs</title>
+  <meta name="description" content="Resurrect Media — Meta ads & automation built for home service businesses. Qualified leads in 30 days or you don't pay.">
+  <title>Resurrect Media — Home Service Ads That Book Real Jobs</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 
   <style>
-    /* ─── RESET ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    /* ─── TOKENS ─── */
     :root {
       --bg:           #0a0a0a;
       --surface:      #101010;
@@ -58,9 +55,7 @@ window.addEventListener('message', function(e) {
       --text-2:       #B0B0B0;
       --text-3:       #555555;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -70,8 +65,6 @@ window.addEventListener('message', function(e) {
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
-
-    /* ─── GLOBAL NOISE OVERLAY ─── */
     body::after {
       content: '';
       position: fixed;
@@ -83,10 +76,7 @@ window.addEventListener('message', function(e) {
       background-repeat: repeat;
       background-size: 200px 200px;
     }
-
-    /* ─── TYPOGRAPHY ─── */
     h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
-
     .section-title {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -95,7 +85,6 @@ window.addEventListener('message', function(e) {
       line-height: 1.15;
       color: var(--text);
     }
-
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -113,16 +102,11 @@ window.addEventListener('message', function(e) {
       font-weight: 700;
       font-size: 0.9rem;
     }
-
-    /* ─── LAYOUT ─── */
     .container       { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
     .container--mid  { max-width: 840px;  margin: 0 auto; padding: 0 24px; }
     .container--slim { max-width: 680px;  margin: 0 auto; padding: 0 24px; }
-
     section { position: relative; padding: 100px 0; }
     @media (max-width: 768px) { section { padding: 72px 0; } }
-
-    /* ─── REVEAL ANIMATIONS ─── */
     .reveal {
       opacity: 0;
       transform: translateY(30px);
@@ -135,8 +119,6 @@ window.addEventListener('message', function(e) {
     .reveal-delay-2              { transition-delay: 0.24s; }
     .reveal-delay-3              { transition-delay: 0.36s; }
     .reveal-delay-4              { transition-delay: 0.48s; }
-
-    /* ─── BUTTON ─── */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -161,10 +143,6 @@ window.addEventListener('message', function(e) {
     }
     .btn:active { transform: scale(0.98); }
     .btn--lg    { font-size: 1.05rem; padding: 18px 42px; }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 1 — HERO
-    ══════════════════════════════════════ ─── */
     #hero {
       min-height: 100dvh;
       display: flex;
@@ -175,8 +153,6 @@ window.addEventListener('message', function(e) {
       padding: 120px 24px 80px;
       overflow: hidden;
     }
-
-    /* Ambient blue glow */
     #hero::before {
       content: '';
       position: absolute;
@@ -188,7 +164,6 @@ window.addEventListener('message', function(e) {
       background: radial-gradient(ellipse, rgba(74,158,255,0.13) 0%, transparent 68%);
       pointer-events: none;
     }
-
     .hero__badge {
       position: relative;
       display: inline-flex;
@@ -218,7 +193,6 @@ window.addEventListener('message', function(e) {
       0%, 100% { opacity: 1; }
       50%       { opacity: 0.35; }
     }
-
     .hero__headline {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -231,7 +205,6 @@ window.addEventListener('message', function(e) {
       margin-bottom: 28px;
     }
     .hero__headline .accent { color: var(--accent); }
-
     .hero__sub {
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
@@ -242,10 +215,7 @@ window.addEventListener('message', function(e) {
       line-height: 1.75;
       position: relative;
     }
-
     .hero__cta { position: relative; }
-
-    /* Hero load-in stagger */
     .hero-in {
       opacity: 0;
       transform: translateY(18px);
@@ -258,16 +228,11 @@ window.addEventListener('message', function(e) {
     @keyframes heroFade {
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 2 — VSL
-    ══════════════════════════════════════ ─── */
     #vsl {
       background: var(--surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
-
     .vsl__label {
       font-family: 'Syne', sans-serif;
       font-weight: 700;
@@ -275,7 +240,6 @@ window.addEventListener('message', function(e) {
       text-align: center;
       margin-bottom: 32px;
     }
-
     .vsl__wrap {
       border-radius: 16px;
       overflow: hidden;
@@ -294,14 +258,8 @@ window.addEventListener('message', function(e) {
       top: 0; left: 0;
       width: 100%; height: 100%;
     }
-
     .vsl__cta { text-align: center; margin-top: 40px; }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 3 — THE OFFER
-    ══════════════════════════════════════ ─── */
     #offer { padding: 80px 0; }
-
     .offer__box {
       max-width: 860px;
       margin: 0 auto;
@@ -313,7 +271,6 @@ window.addEventListener('message', function(e) {
       position: relative;
       overflow: hidden;
     }
-    /* Top accent streak */
     .offer__box::before {
       content: '';
       position: absolute;
@@ -323,7 +280,6 @@ window.addEventListener('message', function(e) {
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--accent), transparent);
     }
-    /* Corner plus */
     .offer__box::after {
       content: '+';
       position: absolute;
@@ -334,7 +290,6 @@ window.addEventListener('message', function(e) {
       color: var(--accent);
       opacity: 0.35;
     }
-    /* Bottom-right glow blob */
     .offer__box .offer__glow {
       position: absolute;
       bottom: -60px; right: -60px;
@@ -342,7 +297,6 @@ window.addEventListener('message', function(e) {
       background: radial-gradient(circle, rgba(74,158,255,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .offer__headline {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -362,23 +316,16 @@ window.addEventListener('message', function(e) {
       line-height: 1.75;
       position: relative;
     }
-
     @media (max-width: 600px) {
       .offer__box { padding: 44px 24px; }
     }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 4 — THE PROBLEM
-    ══════════════════════════════════════ ─── */
     #problem {
       border-top: 1px solid var(--border);
     }
-
     .section-header {
       text-align: center;
       margin-bottom: 56px;
     }
-
     .problem__grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -386,7 +333,6 @@ window.addEventListener('message', function(e) {
       max-width: 1000px;
       margin: 0 auto;
     }
-
     .problem__card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -396,7 +342,6 @@ window.addEventListener('message', function(e) {
       transition: border-color 0.3s ease;
     }
     .problem__card:hover { border-color: var(--accent-line); }
-
     .problem__plus {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -418,16 +363,11 @@ window.addEventListener('message', function(e) {
       line-height: 1.68;
       font-weight: 300;
     }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 5 — THE SOLUTION
-    ══════════════════════════════════════ ─── */
     #solution {
       background: var(--surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
-
     .solution__intro {
       max-width: 700px;
       margin: 0 auto 60px;
@@ -440,7 +380,6 @@ window.addEventListener('message', function(e) {
       line-height: 1.8;
       margin-top: 20px;
     }
-
     .solution__steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -450,7 +389,6 @@ window.addEventListener('message', function(e) {
       border-radius: 18px;
       overflow: hidden;
     }
-
     .step {
       background: var(--surface-2);
       padding: 44px 32px;
@@ -459,12 +397,10 @@ window.addEventListener('message', function(e) {
       position: relative;
     }
     .step:last-child { border-right: none; }
-
     @media (max-width: 720px) {
       .step { border-right: none; border-bottom: 1px solid var(--border); }
       .step:last-child { border-bottom: none; }
     }
-
     .step__num {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -488,12 +424,7 @@ window.addEventListener('message', function(e) {
       line-height: 1.65;
       font-weight: 300;
     }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 6 — RESULTS
-    ══════════════════════════════════════ ─── */
     #results { border-top: 1px solid var(--border); }
-
     .results__stats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -501,7 +432,6 @@ window.addEventListener('message', function(e) {
       max-width: 980px;
       margin: 0 auto 60px;
     }
-
     .stat-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -516,7 +446,6 @@ window.addEventListener('message', function(e) {
       border-color: var(--accent-line);
       transform: translateY(-4px);
     }
-    /* Top blue line */
     .stat-card::before {
       content: '';
       position: absolute;
@@ -524,7 +453,6 @@ window.addEventListener('message', function(e) {
       height: 2px;
       background: linear-gradient(90deg, transparent 0%, var(--accent) 50%, transparent 100%);
     }
-    /* Inner glow */
     .stat-card::after {
       content: '';
       position: absolute;
@@ -534,7 +462,6 @@ window.addEventListener('message', function(e) {
       background: radial-gradient(ellipse, rgba(74,158,255,0.10) 0%, transparent 70%);
       pointer-events: none;
     }
-
     .stat__spend {
       font-size: 0.78rem;
       font-weight: 500;
@@ -545,14 +472,12 @@ window.addEventListener('message', function(e) {
       position: relative;
     }
     .stat__spend strong { color: var(--text-2); }
-
     .stat__arrow {
       font-size: 1.2rem;
       color: var(--text-3);
       margin: 6px 0 10px;
       position: relative;
     }
-
     .stat__revenue {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -563,7 +488,6 @@ window.addEventListener('message', function(e) {
       margin-bottom: 20px;
       position: relative;
     }
-
     .stat__label {
       font-size: 0.85rem;
       color: var(--text-2);
@@ -571,8 +495,6 @@ window.addEventListener('message', function(e) {
       font-weight: 300;
       position: relative;
     }
-
-    /* Screenshot placeholders */
     .results__screenshots {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -580,8 +502,6 @@ window.addEventListener('message', function(e) {
       max-width: 980px;
       margin: 0 auto;
     }
-
-    /* ─── Real screenshot cards ─── */
     .screenshot-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -610,21 +530,15 @@ window.addEventListener('message', function(e) {
       background: var(--surface-2);
     }
     .screenshot-caption strong { color: var(--accent); font-weight: 600; }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 7 — WHY US
-    ══════════════════════════════════════ ─── */
     #why {
       background: var(--surface);
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
     }
-
     .why__list {
       max-width: 700px;
       margin: 0 auto;
     }
-
     .why__item {
       display: flex;
       gap: 24px;
@@ -632,7 +546,6 @@ window.addEventListener('message', function(e) {
       border-bottom: 1px solid var(--border-2);
     }
     .why__item:last-child { border-bottom: none; }
-
     .why__plus {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -655,18 +568,12 @@ window.addEventListener('message', function(e) {
       line-height: 1.7;
       font-weight: 300;
     }
-
-    /* ─── ══════════════════════════════════════
-         SECTION 8 — FORM
-    ══════════════════════════════════════ ─── */
     #form { padding-top: 64px; padding-bottom: 72px; }
-
     .form__restate {
       text-align: center;
       max-width: 560px;
       margin: 0 auto 32px;
     }
-
     .form__guarantee-badge {
       display: inline-flex;
       align-items: center;
@@ -688,7 +595,6 @@ window.addEventListener('message', function(e) {
       font-size: 0.6rem;
       opacity: 0.7;
     }
-
     .form__header {
       font-family: 'Syne', sans-serif;
       font-weight: 800;
@@ -704,7 +610,6 @@ window.addEventListener('message', function(e) {
       font-weight: 300;
       line-height: 1.7;
     }
-
     .form__embed-wrap {
       max-width: 620px;
       margin: 0 auto;
@@ -725,10 +630,6 @@ window.addEventListener('message', function(e) {
       #form { padding-top: 48px; padding-bottom: 56px; }
       .form__restate { margin-bottom: 24px; }
     }
-
-    /* ─── ══════════════════════════════════════
-         FOOTER
-    ══════════════════════════════════════ ─── */
     footer {
       border-top: 1px solid var(--border);
       padding: 44px 24px;
@@ -759,15 +660,15 @@ window.addEventListener('message', function(e) {
   ════════════════════════════ -->
   <section id="hero">
     <div class="hero-in">
-      <div class="hero__badge">Meta Ads — Junk Removal Only</div>
+      <div class="hero__badge">Meta Ads — Home Service Businesses</div>
     </div>
 
     <h1 class="hero__headline hero-in">
-      We Get Junk Removal Companies <span class="accent">Booked Jobs</span> — On Autopilot
+      We Get Home Service Businesses <span class="accent">Booked Jobs</span> — On Autopilot
     </h1>
 
     <p class="hero__sub hero-in">
-      Done-for-you Meta ad campaigns plus automated lead follow-up — built exclusively for junk removal companies.
+      Done-for-you Meta ad campaigns plus automated lead follow-up — built for junk removal, epoxy, and home service operators who want real, exclusive leads.
     </p>
 
     <div class="hero__cta hero-in">
@@ -786,7 +687,7 @@ window.addEventListener('message', function(e) {
       <div class="vsl__wrap reveal reveal-delay-1">
         <div class="vsl__ratio">
           <iframe
-            src="https://www.loom.com/embed/f109f79580a042199d0ce2428ba932b5"
+            src="https://www.loom.com/embed/f592a03609e543eaab85da4b955690c7"
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
@@ -813,10 +714,10 @@ window.addEventListener('message', function(e) {
         <div class="offer__glow"></div>
         <div class="eyebrow" style="justify-content: center;">The Guarantee</div>
         <h2 class="offer__headline">
-          Qualified Leads in Your First 30 Days —<br>Or You Don't Pay Until You Do.
+          10 Qualified Leads in Your First 30 Days —<br>Or You Get a Full Refund.
         </h2>
         <p class="offer__sub">
-          I run your ads AND handle every lead automatically. You just show up to real, booked jobs.
+          I run your ads AND handle every lead automatically. You just show up to real, booked jobs. If I don't deliver, you get your money back — simple as that.
         </p>
       </div>
     </div>
@@ -831,7 +732,7 @@ window.addEventListener('message', function(e) {
       <div class="section-header">
         <div class="eyebrow">The Problem</div>
         <h2 class="section-title reveal">
-          Why Most Junk Removal Companies<br>Struggle to Stay Booked
+          Why Most Home Service Businesses<br>Struggle to Stay Booked
         </h2>
       </div>
 
@@ -844,7 +745,7 @@ window.addEventListener('message', function(e) {
         <div class="problem__card reveal reveal-delay-2">
           <div class="problem__plus">+</div>
           <h3>Shared leads are a race to the bottom</h3>
-          <p>Lead services sell the same lead to five companies. You're competing on price with four other trucks before you even say hello.</p>
+          <p>Lead services sell the same lead to five companies. You're competing on price with four other guys before you even say hello.</p>
         </div>
         <div class="problem__card reveal reveal-delay-3">
           <div class="problem__plus">+</div>
@@ -923,39 +824,45 @@ window.addEventListener('message', function(e) {
       </div>
 
       <!-- Real proof screenshots -->
-<div class="results__screenshots">
- 
-  <!-- Thomas testimonial (existing) -->
-  <div class="screenshot-card reveal reveal-delay-1">
-    <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM.jpeg" alt="Client confirming $10–14k in booked jobs">
-    <div class="screenshot-caption">Client text — <strong>$10–14k booked</strong> since running ads</div>
-  </div>
- 
-  <!-- Sharif testimonial (NEW) -->
-  <div class="screenshot-card reveal reveal-delay-2">
-    <img src="img/IMG_3870.jpg" alt="Client confirming $14k in closed jobs on less than $900 ad spend">
-    <div class="screenshot-caption">Client text — <strong>$14k closed</strong> on less than $900 in ad spend</div>
-  </div>
- 
-  <!-- Grant testimonial (NEW) -->
-  <div class="screenshot-card reveal reveal-delay-3">
-    <img src="img/IMG_3779.PNG" alt="Client booking back-to-back jobs after new leads">
-    <div class="screenshot-caption">Client text — <strong>Booking back to back</strong> · 3 jobs locked in next week</div>
-  </div>
- 
-  <!-- Campaign 1 (existing) -->
-  <div class="screenshot-card reveal reveal-delay-4">
-    <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%281%29.jpeg" alt="Facebook Ads campaign results — 65 leads">
-    <div class="screenshot-caption">Campaign 1 — 65 leads · <strong>$10.16 CPL</strong> · $660 spend</div>
-  </div>
- 
-  <!-- Campaign 2 (existing) -->
-  <div class="screenshot-card reveal reveal-delay-4">
-    <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%282%29.jpeg" alt="Facebook Ads campaign results — 20 leads">
-    <div class="screenshot-caption">Campaign 2 — 20 leads · <strong>$8.08 CPL</strong> · $161 spend</div>
-  </div>
- 
-</div>
+      <div class="results__screenshots">
+
+        <!-- Thomas testimonial -->
+        <div class="screenshot-card reveal reveal-delay-1">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM.jpeg" alt="Client confirming $10–14k in booked jobs">
+          <div class="screenshot-caption">Client text — <strong>$10–14k booked</strong> since running ads</div>
+        </div>
+
+        <!-- Sharif testimonial -->
+        <div class="screenshot-card reveal reveal-delay-2">
+          <img src="img/IMG_3870.jpg" alt="Client confirming $14k in closed jobs on less than $900 ad spend">
+          <div class="screenshot-caption">Client text — <strong>$14k closed</strong> on less than $900 in ad spend</div>
+        </div>
+
+        <!-- Grant testimonial -->
+        <div class="screenshot-card reveal reveal-delay-3">
+          <img src="img/IMG_3779.PNG" alt="Client booking back-to-back jobs after new leads">
+          <div class="screenshot-caption">Client text — <strong>Booking back to back</strong> · 3 jobs locked in next week</div>
+        </div>
+
+        <!-- Campaign 1 -->
+        <div class="screenshot-card reveal reveal-delay-4">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%281%29.jpeg" alt="Facebook Ads campaign results — 65 leads">
+          <div class="screenshot-caption">Campaign — 65 leads · <strong>$10.16 CPL</strong> · $660 spend</div>
+        </div>
+
+        <!-- Campaign 2 -->
+        <div class="screenshot-card reveal reveal-delay-4">
+          <img src="img/WhatsApp%20Image%202026-06-28%20at%205.42.40%20PM%20%282%29.jpeg" alt="Facebook Ads campaign results — 20 leads">
+          <div class="screenshot-caption">Campaign — 20 leads · <strong>$8.08 CPL</strong> · $161 spend</div>
+        </div>
+
+        <!-- Epoxy campaign results -->
+        <div class="screenshot-card reveal reveal-delay-4">
+          <img src="img/epoxy-campaign.png" alt="Epoxy campaign results — 18 leads at $18.61 CPL">
+          <div class="screenshot-caption">Epoxy campaign — 18 leads · <strong>$18.61 CPL</strong> · $335 spend</div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -974,15 +881,15 @@ window.addEventListener('message', function(e) {
         <div class="why__item reveal">
           <div class="why__plus">+</div>
           <div class="why__content">
-            <h3>Built exclusively for junk removal companies</h3>
-            <p>This is all I do. I'm not managing ads for dentists, gyms, or restaurants on the side. My systems, my copy, and my strategy are dialed in specifically for junk removal — you're not paying for a learning curve.</p>
+            <h3>Built for home service businesses</h3>
+            <p>This is what I do — junk removal, epoxy, and home service operators. I'm not managing ads for dentists, gyms, or restaurants on the side. My systems, my copy, and my strategy are dialed in for your industry, not a generic playbook.</p>
           </div>
         </div>
         <div class="why__item reveal reveal-delay-1">
           <div class="why__plus">+</div>
           <div class="why__content">
-            <h3>Founded by an actual junk removal operator</h3>
-            <p>I ran my own junk removal company. I know the business — job sizes, seasonality, what customers actually care about, what makes a lead worth chasing. That knowledge is baked into everything I build for you.</p>
+            <h3>Founded by an actual operator</h3>
+            <p>I've run home service businesses myself. I know job sizes, seasonality, what customers actually care about, and what makes a lead worth chasing. That knowledge is baked into everything I build for you.</p>
           </div>
         </div>
         <div class="why__item reveal reveal-delay-2">
@@ -1003,7 +910,7 @@ window.addEventListener('message', function(e) {
   <section id="form">
     <div class="container">
       <div class="form__restate reveal">
-        <div class="form__guarantee-badge">Qualified leads in 30 days — or you don't pay</div>
+        <div class="form__guarantee-badge">10 qualified leads in 30 days — or full refund</div>
         <h2 class="form__header">Let's See If We're a Fit</h2>
         <p class="form__sub">Answer a few quick questions and book your strategy call. I only take clients I know I can get results for.</p>
       </div>
@@ -1038,7 +945,7 @@ window.addEventListener('message', function(e) {
     <div class="footer__brand">
       Resurrect Media <span class="plus">+</span>
     </div>
-    <p class="footer__tagline">Meta ads &amp; automation for junk removal companies.</p>
+    <p class="footer__tagline">Meta ads &amp; automation for home service businesses.</p>
   </footer>
 
 
@@ -1046,7 +953,6 @@ window.addEventListener('message', function(e) {
        SCRIPTS
   ════════════════════════════ -->
   <script>
-    // Scroll reveal via Intersection Observer
     const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
