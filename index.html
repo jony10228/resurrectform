@@ -424,6 +424,55 @@ window.addEventListener('message', function(e) {
       line-height: 1.65;
       font-weight: 300;
     }
+
+    /* ─── PROOF BAR ─── */
+    .proofbar {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      text-align: center;
+    }
+    .proofbar__inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .proofbar__stat { flex: 1 1 240px; }
+    .proofbar__num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      color: var(--accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .proofbar__label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-2);
+    }
+    .proofbar__divider {
+      width: 1px;
+      height: 64px;
+      background: var(--border);
+    }
+    .proofbar__note {
+      margin-top: 22px;
+      font-size: 0.75rem;
+      color: var(--text-3);
+    }
+    @media (max-width: 640px) {
+      .proofbar__divider { display: none; }
+    }
+
     #results { border-top: 1px solid var(--border); }
     .results__stats {
       display: grid;
@@ -790,6 +839,24 @@ window.addEventListener('message', function(e) {
     </div>
   </section>
 
+
+  <!-- ════════════════════════════
+       PROOF BAR
+  ════════════════════════════ -->
+  <div class="proofbar">
+    <div class="proofbar__inner reveal">
+      <div class="proofbar__stat">
+        <div class="proofbar__num">$44K+</div>
+        <div class="proofbar__label">Client-Reported Revenue</div>
+      </div>
+      <div class="proofbar__divider"></div>
+      <div class="proofbar__stat">
+        <div class="proofbar__num">&lt;$5K</div>
+        <div class="proofbar__label">Total Ad Spend</div>
+      </div>
+    </div>
+    <p class="proofbar__note">Across home service clients. Revenue figures reported by clients.</p>
+  </div>
 
   <!-- ════════════════════════════
        SECTION 6 — RESULTS
