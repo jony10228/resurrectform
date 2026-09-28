@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code (PageView only, no Lead event here: CAPI handles that) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1307712794563872');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1307712794563872&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Book Your Call — Resurrect Media</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:          #0a0a0a;
+      --surface:     #101010;
+      --border:      rgba(255,255,255,0.07);
+      --accent:      #4A9EFF;
+      --accent-dim:  rgba(74,158,255,0.10);
+      --accent-line: rgba(74,158,255,0.30);
+      --text:        #FFFFFF;
+      --text-2:      #B0B0B0;
+      --text-3:      #555555;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(800px, 120vw);
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(74,158,255,0.12) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .wrap {
+      position: relative;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 72px 24px 64px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent-line);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 9px 20px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+    }
+    .badge::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 5.5vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+    }
+    h1 .accent { color: var(--accent); }
+    .sub {
+      color: var(--text-2);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 40px;
+      line-height: 1.75;
+    }
+    .cal {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 28px 72px rgba(0,0,0,0.45), 0 0 48px rgba(74,158,255,0.05);
+    }
+    .cal iframe {
+      display: block;
+      width: 100%;
+      min-height: 700px;
+      border: none;
+      overflow: hidden;
+    }
+    .note {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--text-3);
+    }
+    @media (max-width: 600px) {
+      .wrap { padding: 48px 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">You're a fit</div>
+    <h1>Pick a time that <span class="accent">works for you.</span></h1>
+    <p class="sub">Grab a slot below. I'll walk you through exactly how it works and what we'd build for your business.</p>
+
+    <div class="cal">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/yKjnpZkcj4wce5wgrffs" allow="payment" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="yKjnpZkcj4wce5wgrffs_1790598762506"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+    </div>
+
+    <p class="note">You'll get a text and email confirmation right after you book.</p>
+  </div>
+</body>
+</html>
